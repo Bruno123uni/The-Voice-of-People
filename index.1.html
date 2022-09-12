@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+     <style type="text/css">
+     *{
+    padding: 0;
+    margin: 0;
+}
+#box{
+
+    position: relative;
+    right: -20px;
+    background-color:peachpuff;
+  height: 300px;
+  width: 400px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+
+}
+        body  {
+            font:17px Calibri;
+            background-color: #faf0e6;
+        }
+        .center {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.75);
+            width: 100%;
+            height: 100%;
+                       padding-top: 100px;
+
+            display: none;
+        }
+
+        .divFloat {
+            background-color: #FFF;
+            color: #000;
+            width: auto;
+            height: auto;
+            padding: 20px;
+            font: inherit;
+            border: solid 1px #999;
+            -webkit-border-radius: 3px;
+            -webkit-box-orient: vertical;
+            -webkit-transition: 200ms -webkit-transform;
+            box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2),
+            	0 2px 6px rgba(0, 0, 0, 0.15);
+            display: block;
+        }
+        .btClickHere {
+            font: inherit;
+            background-color: #587898;
+            color: #FFF;
+            cursor: pointer;
+        }
+        .btClose {
+            margin: 0 auto;
+            background-color: #FFF;
+            font: inherit;
+            font-weight: bold;
+            color: red;
+            border: 10;
+            width: auto;
+            float: right;
+            clear: both;
+            cursor: pointer;
+        }
+        .btGetPass {
+            font: inherit;
+            color: #FFF;
+            padding: 2px 4px;
+            width: 150px;
+            display: block;
+            background-color: #FF780B;
+            border: solid 1px #FF780B;
+            border-top-right-radius: 10px 20px;
+            border-bottom-right-radius: 10px 20px;
+            border-bottom-left-radius: 10px 20px;
+            border-top-left-radius: 10px 20px;
+            cursor: pointer;
+        }
+
+            nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #65bde0;
+}
+nav .navbar-brand .red
+{
+    color: #e0657a;
+}
+nav .navbar-brand .yellow
+{
+    color: #e0c365;
+}
+nav .navbar-brand .green
+{
+    color: #8fd65c;
+}
+nav .navbar-brand .orange
+{
+    color: #f0b762;
+}
+nav .navbar-brand .purple
+{
+    color: #da88fc;
+}
+nav .navbar-brand .teal
+{
+    color: #88fcc4;
+}
+nav .navbar-brand .p
+{
+    color: #ffebfe;
+}
+
+#page-wrap { width: 60%; margin: 80px auto; position: relative; }
+
+		#logo { position: absolute; top: 0; left: 50%; margin-left: -125px; }
+
+		#l, #r { width: 49%; }
+		#l { float: left; }
+		#r { float: right; }
+
+		#l:before, #r:before { content: ""; width: 125px; height: 250px; }
+
+		#l:before { float: right; }
+		#r:before { float: left; }
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+img
+{
+    display: inline-block;
+  margin: 25px 10px;
+}
+#your_col {
+  border-right: 1px solid black;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light border" style = "height:125;background-color: #faf0e6">
+
+<p style="text-align:justify">Heavy-rainfall,all shops close down </p><br><br><br><img src="heavyrain.png"  width="200" height="100"><br>
+<p style="text-align:justify">Keep an umbrella handy</p><img src = "line.html.png" style="height:100px"><br>
+
+<p style="text-align:justify">Latovial wins hearts at the box-office.Critics claim it to be the No. 1 movie</p><br><br><br><img src="Box-Office.png"  width="200" height="100"><br>
+<p style="text-align:justify">You don't want to miss out</p><img src = "line.html.png" style="height:100px"><br>
+
+<p style="text-align:justify">James webb telescope releases new subset of data showing star clusters</p><br><br><br><img src="jwsti.png"  width="200" height="100"><br>
+<p style="text-align:justify">Astronomers worldwide are in awe</p>
+
+        </nav>
+        <center>
+<hr style="height:2px;width:97%;border-width:0;color:gray;background-color:gray"><header><img src = "logo.png" height = "300px" width = "350px">
+<h1 style="font-size: 160px">The Voice of People</h1></header>
+
+    <p style="text-alight:center">   VOL 2 ED 7&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; No. 762 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;SUNDAY, SEPTEMBER 11, 2022&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 5$</p>
+</center>
+<hr style="height:2px;width:97%;border-width:0;color:gray;background-color:gray">
+
+<header>
+    <div style="margin-top: 50px;margin-bottom: 100px;
+  margin-right: 50px;
+  margin-left: 80px;width:250px">
+<h4 class = "text-capitalize"><kbd>What does the school have to say?</kbd></h4>
+            <hr>
+            <h5 class = "text-left text-capitalize text-success">School's official statement<b></b></h5>
+            <p class = "text-left text-muted">The 14 students are IGCSE drama students at The International School of Bangalore. The peculiarity of this case is that among all the 1000 students in the school, the government chose only these 14 students for the secret experiment. The school's principal described the events that occurred on the day of the abduction - 8/8/22. "The students were seated in the drama room for their class just as the bell rang a big white van entered from the school gate. They had proper government documents that gave them the right to enter without objection; we had no power to stop them" - Dr. Caroline. She also stated that - "We are trying to do everything we can to improve the safety of the school, and help the affected".The school's drama teacher, Mr. Paul further elaborated on the actions of the two guards - "I was briefing the students on their next task when suddenly two guards dressed in a light blue uniform gestured them to stand up and follow them. I was startled and tried to stop them but they pushed me away towards the wall. Before I could even get up and interfere, they were already downstairs and about to leave the campus. I was baffled, I did not know how to react". Police are trying to find a link between the school and the government project, and further investigation is to be done.  <p><br>
+
+                <hr></div>
+
+
+<div style = "margin-top: -15px;margin-left: -1px"class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 11</div>
+  <img src="missingc.jpeg" style="width:1000px;height:550px">
+  <div class="text">Desperate parents get out on streets to find their missing children; 32 days since missing</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 11</div>
+  <img src="connect.webp" style="width:1000px;height:550px">
+  <div class="text">Crime experts link the case with previous reports of missing children. Is it all inter-connected?</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 11</div>
+  <img src="cagek.png" style="width:1000px;height:550px">
+  <div class="text">Reports of missing children pour in from different parts of the world, evidence states children from elite schools are locked in a government unit</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 11</div>
+  <img src="cavee.jpeg" style="width:1000px;height:550px">
+  <div class="text">Journalists arrive at the secret unit.Entrance of the camp imaged above</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 11</div>
+  <img src="interiorc.jpeg" style="width:800px;height:550px">
+  <div class="text">Secret cameras expose secret government project, 14 children rescued</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 11</div>
+  <img src="cafed.jpeg" style="width:1000px;height:550px">
+  <div class="text">Journalists expose the biggest scam. Pictures from the cafe displayed above</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 11</div>
+  <img src="food.jpeg" style="width:1000px;height:550px">
+  <div class="text">Unhygenic food served to the children for around 80 days, all report stomach problems.</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 11</div>
+  <img src="kidj.webp" style="width:1000px;height:550px">
+  <div class="text">Children hurdled together in a cage in inhumane conditions</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 11</div>
+  <img src="dorm.png" style="width:1000px;height:550px">
+  <div class="text">Dorms similar to military camps pictured above</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 11</div>
+  <img src="experiment b.png" style="width:1000px;height:550px">
+  <div class="text">Top secret images show the experiments performed on children. People around the world are enraged upon viewing it</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 11</div>
+  <img src="experiment g.png" style="width:1000px;height:550px">
+  <div class="text">Top secret images show the experiments performed on children. Interview with the little girl coming up soon</div>
+</div>
+
+</div>
+<br>
+</header>
+<div hidden>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+    <span class="dot"></span>
+  <span class="dot"></span>
+      <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+        <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+     <div style="margin-top: -1350px;margin-bottom: -100px;
+  margin-left: 1500px;width:250px">
+<h4 class = "text-capitalize"><kbd>Interview with the children</kbd></h4>
+            <hr>
+            <p class = "text-left text-muted">A few days before D-Day, The Voice of People received a postcard from one of the inmates at the hillside unit. She detailed her experiences at the government camp and pleaded for help. Jessie(Real name not used) underwent the experiment and reports her experiences to us in this interview. <br>
+<br>
+Interviewer - "What were your feelings when you were abducted, did you know what was going to happen?"
+<br><br>
+Jessie - "I froze, it was the textbook flight reaction to an extremely stressful situation. All sounds from the outside world were blocked by the walls of the van. None of us knew where we were going, why we were here, or how long it will take before we stop.
+<br><br>
+Interviewer - "Do you remember what you did on your first day, did you meet the Governor?"
+<br><br>
+Jessie - " After a few minutes we arrived at the unit, I met both the governor and walker. I didn't believe a word any of them said. The governor spoke too fast in an angry tone and didn’t even consider our mental state. We all were panicking and all he could tell us was that this is a government facility - What? One of us is guilty and is the reason why we are here - Who? We will be allowed to write our parents a letter once a month and that they have been informed. He left us with more questions than answers.
+<br><br>
+Interviewer - "Do you remember what happened during the experiment"
+<br><br>
+Jessie - "As usual, I was walking down the hallway and cleaning the cobwebs; when suddenly black and green covered my face. All I remember was that they pushed me somewhere and I heard Governor Reynold order them to close the doors. After that, I have no memory of the events. Am I all right? Are you sure? Are you sure?
+<br><br>
+**We had to stop the interview because Jessie had a panic attack upon having flashbacks of her traumatic experiences. She is scared about what they did to her, and whether she is still who she was before. <p><br>
+
+                <hr></div>
+<center>
+    <li class = "list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li" style="width:1000px;margin-top:-1300px">
+              <h4 class = "text-capitalize">HILLSIDE UNIT BUSTED!</h4>
+            <header> <img  src="masks man.png" class = "img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <img  src="guards.png" class = "img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            </header>
+             <br><br><center> <p class = "list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+
+Upon receiving the postcard from one of the inmates, The Voice of the people sent out two journalists on a mission to uncover the truth about the missing children and the secret government unit. We already possessed the CCTV footage from one of the areas in the Hillside unit and required more evidence for authorities to step in.
+<br><br>
+The two journalists were disguised as prison guards and both were given different tours. Journalist Kelah was allowed to view the cafeteria, the dormitories, and the hallway. She uncovered from her footage that 14 children were being forced to participate in government-led experiments. The children were scared and pleading for help; they were living inhumane conditions. The food in the cafeteria was like stone and was not suitable for consumption. The experiment was conducted on two children who have no memory of the events and have been placed under critical care.
+<br><br>
+The accused - Governor Reynold, Officer Walker, and Guards - Black and Green have all been arrested and interrogation is being conducted. Though, Walker assisted us in exposing the Hillside Unit, and with the investigation.
+<br><br>
+More details regarding their trial will be available in one week. Government Officers behind the scam are under hot fire and will be part of the trial.
+</p></center>
+          </li>
+
+
+
+
+
+
+	</center>
+
+
+    <script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    $(document).ready(function () {
+        $('#btClick').click(function () {
+            $('#CenterDIV').css('display', 'block');
+        });
+        $('#btClose').click(function () {
+            $('#CenterDIV').css('display', 'none');
+        });
+    });
+    $(document).ready(function () {
+        $('#btClick1').click(function () {
+            $('#CenterDIV1').css('display', 'block');
+        });
+        $('#btClose1').click(function () {
+            $('#CenterDIV1').css('display', 'none');
+        });
+    });
+    $(document).ready(function () {
+        $('#btClick2').click(function () {
+            $('#CenterDIV2').css('display', 'block');
+        });
+        $('#btClose2').click(function () {
+            $('#CenterDIV2').css('display', 'none');
+        });
+    });
+
+      $(document).ready(function () {
+        $('#btClick3').click(function () {
+            $('#CenterDIV3').css('display', 'block');
+        });
+        $('#btClose3').click(function () {
+            $('#CenterDIV3').css('display', 'none');
+        });
+    });
+
+      $(document).ready(function () {
+        $('#btClick4').click(function () {
+            $('#CenterDIV4').css('display', 'block');
+        });
+        $('#btClose4').click(function () {
+            $('#CenterDIV4').css('display', 'none');
+        });
+    });
+
+      $(document).ready(function () {
+        $('#btClick5').click(function () {
+            $('#CenterDIV5').css('display', 'block');
+        });
+        $('#btClose5').click(function () {
+            $('#CenterDIV5').css('display', 'none');
+        });
+    });
+
+      $(document).ready(function () {
+        $('#btClick6').click(function () {
+            $('#CenterDIV6').css('display', 'block');
+        });
+        $('#btClose6').click(function () {
+            $('#CenterDIV6').css('display', 'none');
+        });
+    });
+
+      $(document).ready(function () {
+        $('#btClick7').click(function () {
+            $('#CenterDIV7').css('display', 'block');
+        });
+        $('#btClose7').click(function () {
+            $('#CenterDIV7').css('display', 'none');
+        });
+    });
+
+
+
+</script>
+
